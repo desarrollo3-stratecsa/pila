@@ -18,7 +18,8 @@ public class Casa {
 
     public Casa() {
     }
-
+    
+    
     public Casa(String direccion, String zona, int numero_de_habitaciones) {
         this.direccion = direccion;
         this.zona = zona;
