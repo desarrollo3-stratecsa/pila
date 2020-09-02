@@ -14,6 +14,35 @@ public class Casa {
     private String direccion;
 
     private String zona;
+    private int numero_de_habitaciones;
+
+    public Casa() {
+    }
+
+    public Casa(String direccion, String zona, int numero_de_habitaciones) {
+        this.direccion = direccion;
+        this.zona = zona;
+        this.numero_de_habitaciones = numero_de_habitaciones;
+    }
+
+    /**
+     * Get the value of numero_de_habitaciones
+     *
+     * @return the value of numero_de_habitaciones
+     */
+    public int getNumero_de_habitaciones() {
+        return numero_de_habitaciones;
+    }
+
+    /**
+     * Set the value of numero_de_habitaciones
+     *
+     * @param numero_de_habitaciones new value of numero_de_habitaciones
+     */
+    public void setNumero_de_habitaciones(int numero_de_habitaciones) {
+        this.numero_de_habitaciones = numero_de_habitaciones;
+    }
+
 
     /**
      * Get the value of zona
@@ -53,7 +82,9 @@ public class Casa {
 
     @Override
     public String toString() {
-        return "Casa{" + "direccion=" + direccion + ", zona=" + zona + '}';
+        return "Casa{" + "direccion=" + direccion + ", zona=" + zona + ", numero_de_habitaciones=" + numero_de_habitaciones + '}';
     }
+
+    
 
 }
